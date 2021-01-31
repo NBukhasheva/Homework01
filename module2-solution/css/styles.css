@@ -1,0 +1,69 @@
+* {
+	box-sizing: border-box;
+	font-family: cursive;
+}
+h1 {
+	text-align: center;
+	margin-bottom: 70px;
+	margin-top: 50px;
+}
+
+div {
+	background-color: grey;
+	float: left;
+	border-style: solid;
+	width: 29%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 10px;
+}
+h2 {
+	float: right;
+	border-color: black;
+	background-color: red;
+	border-style: solid;
+	padding: 0;
+	margin: 0;
+	border-right-style: none;
+	border-top-style: none;
+	padding-left: 8px;
+	padding-right: 8px;
+	width: 40%;
+	text-align: center;
+}
+div.meat > h2 {
+	background-color: blue;
+	color: white;
+}
+div.fish > h2 {
+	background-color: yellow;
+}
+p{
+	clear: right;
+	padding-top: 3px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	div {
+		width: 46%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	div.fish {
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	div > h2 {
+		width: 40%;
+	}
+	div.fish > h2 {
+		width: 20%;
+	}
+}
+@media (max-width: 767px) {
+	div {
+		width: 96%;
+	}
+}
